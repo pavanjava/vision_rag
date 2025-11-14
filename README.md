@@ -142,6 +142,7 @@ This project is built using the following excellent tools and frameworks:
 
 - **[Agno](https://github.com/agno-agi/agno)** - AI agent framework for building intelligent applications
 - **[LlamaIndex](https://www.llamaindex.ai/)** - Data framework for LLM applications with RAG capabilities
+- **[Chonkie](https://docs.chonkie.ai/)** - The lightweight ingestion library for fast, efficient and robust RAG pipelines
 - **[Qdrant](https://qdrant.tech/)** - High-performance vector database for similarity search
 - **[vLLM](https://github.com/vllm-project/vllm)** - Fast and efficient LLM inference engine
 - **[RunPod](https://www.runpod.io/)** - GPU cloud infrastructure for AI workloads
