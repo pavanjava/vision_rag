@@ -1,7 +1,12 @@
+import os
+
 import requests
 
 from core.image_to_base64_converter import image_to_base64
 from core.ingestion_pipe import ingest_data_to_store
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 
 class VLLMVisionClient:
@@ -117,7 +122,7 @@ class VLLMVisionClient:
 # Example usage
 if __name__ == "__main__":
     # Initialize client
-    client = VLLMVisionClient()
+    client = VLLMVisionClient(base_url=os.environ.get("VLLM_API_URL"))
 
     # Example 1: Query with image URL
     # print("Example 1: Using image URL")
@@ -140,7 +145,7 @@ if __name__ == "__main__":
     print("Example 2: Using local image")
     response = client.chat_with_local_image(
         text_prompt="Extract all the information from the image in paragraph manner. No markdown or No markup or no bullet points.",
-        image_path='output_images/0000773840-25-000105_page_7.png'
+        image_path='output_images/0000773840-25-000105_page_8.png'
     )
 
     if response:
