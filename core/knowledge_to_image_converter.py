@@ -65,7 +65,7 @@ def pdf_to_images(pdf_path, output_folder="pdf_images", page_number=None, dpi=30
 # Example usage
 if __name__ == "__main__":
     # Example 1: Convert all pages
-    pdf_to_images("../data/0000773840-25-000105.pdf", output_folder="output_images", page_number=7)
+    pdf_to_images("../data/0000773840-25-000105.pdf", output_folder="output_images", page_number=8)
 
     # Example 2: Convert only page 3
     # pdf_to_images("sample.pdf", output_folder="output_images", page_number=3)

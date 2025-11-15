@@ -60,15 +60,14 @@ SYSTEM_PROMPT = (
 claude_llm = Claude(id="claude-sonnet-4-20250514", temperature=0.7, api_key=os.environ.get("ANTHROPIC_API_KEY"))
 # gpt_llm = OpenAIChat(id="gpt-4o", temperature=0.7, api_key=os.environ.get("OPENAI_API_KEY"))
 # llm = Ollama(id='gemma3:12b')
-vllm = VLLM(id="Qwen/Qwen3-VL-8B-Instruct", base_url="https://s7z2ms3wud6hm6-8000.proxy.runpod.net/v1/")
+vllm = VLLM(id="Qwen/Qwen3-VL-8B-Instruct", base_url=f"{os.environ.get('VLLM_API_URL')}/v1/")
 
 def create_claude_agent():
     # Instantiate the Agno Agent with the knowledge base
     _agent = Agent(
         model=vllm,
-        tools=[GoogleSearchTools(fixed_max_results=5)],
-        knowledge=kb,
-        search_knowledge=True,
+        # tools=[GoogleSearchTools(fixed_max_results=5)],
+        # search_knowledge=True,
         debug_mode=True,
         system_message=SYSTEM_PROMPT,
         instructions="Always give the response in bullets or tabular format."
