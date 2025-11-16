@@ -138,7 +138,7 @@ The system runs on **4x NVIDIA GeForce RTX 5090** (32GB each) with tensor parall
 
 ## Credits
 
-This project is built using the following excellent tools and frameworks:
+This project is built using the following excellent frameworks:
 
 - **[Agno](https://github.com/agno-agi/agno)** - AI agent framework for building intelligent applications
 - **[LlamaIndex](https://www.llamaindex.ai/)** - Data framework for LLM applications with RAG capabilities
