@@ -65,7 +65,7 @@ vllm = VLLM(id="Qwen/Qwen3-VL-8B-Instruct", base_url=f"{os.environ.get('VLLM_API
 def create_claude_agent():
     # Instantiate the Agno Agent with the knowledge base
     _agent = Agent(
-        model=vllm,
+        model=claude_llm,
         # tools=[GoogleSearchTools(fixed_max_results=5)],
         # search_knowledge=True,
         debug_mode=True,
