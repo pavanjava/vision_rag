@@ -76,7 +76,7 @@ def create_claude_agent():
 
 agent = create_claude_agent()
 
-query = "What are Total current assets in September 30, 2025?"
+query = "What are The Deferred Income Taxes ?"
 # query = "What are the total Asbestos-related liabilities?"
 
 context = ''

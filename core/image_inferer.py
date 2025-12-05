@@ -12,7 +12,7 @@ load_dotenv(find_dotenv())
 class VLLMVisionClient:
     """Client for calling vLLM Vision API endpoint"""
 
-    def __init__(self, base_url="https://s7z2ms3wud6hm6-8000.proxy.runpod.net"):
+    def __init__(self, base_url="https://0veympl9jx57zi-8000.proxy.runpod.net"):
         self.base_url = base_url.rstrip('/')
         self.endpoint = f"{self.base_url}/v1/chat/completions"
 
